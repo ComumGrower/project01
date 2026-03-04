@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seu Produto — Converta mais com uma solução simples</title>
+  <meta name="description" content="Landing page enxuta para captar leads e apresentar seu produto de forma clara e objetiva." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tipografia: pode trocar depois -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Seu Produto — Converta mais" />
+  <meta property="og:description" content="Apresente seu produto e capture leads em uma página rápida e responsiva." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/hero.png" />
+  <meta name="theme-color" content="#0ea5e9" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="brand">
+        <img src="./assets/logo.png" alt="Logo" class="logo" />
+        <span>Claro Empresas</span>
+      </a>
+      <nav class="menu">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato" class="btn btn--ghost">Fale conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1>Planos corporativos</h1> 
+          <p class="lead">
+            Uma landing page enxuta, rápida e responsiva para apresentar sua proposta de valor e captar os contatos certos.
+          </p>
+          <div class="hero__cta">
+            <a href="#contato" class="btn btn--primary">Começar agora</a>
+            <a href="#beneficios" class="btn btn--link">Ver como funciona</a>
+          </div>
+          <ul class="hero__badges">
+            <li>⚡ Carregamento rápido</li>
+            <li>📱 100% responsiva</li>
+            <li>🔒 Formulário seguro</li>
+          </ul>
+        </div>
+        <div class="hero__media">
+          <img src="./assets/hero.jpg" alt="Demonstração do produto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section id="beneficios" class="section">
+      <div class="container">
+        <h2>Por que escolher <span class="brand-inline">SeuProduto</span>?</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Configuração rápida</h3>
+            <p>Suba sua página em minutos e valide sua oferta sem complicação.</p>
+          </article>
+          <article class="card">
+            <h3>Foco na conversão</h3>
+            <p>Estrutura pensada para destacar benefícios e calls-to-action.</p>
+          </article>
+          <article class="card">
+            <h3>SEO básico incluso</h3>
+            <p>Metatags essenciais para melhor visualização e compartilhamento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="section section--alt">
+      <div class="container">
+        <h2>Quem já usou, recomenda</h2>
+        <div class="testimonials">
+          <blockquote class="testimonial">
+            <p>“A página ficou pronta no mesmo dia e começamos a captar leads imediatamente.”</p>
+            <footer>— Camila, Marketing</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>“Equipe comercial adorou. Simples, direta e eficiente.”</p>
+            <footer>— Rafael, Vendas</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>Perguntas frequentes</h2>
+        <div class="faq">
+          <details>
+            <summary>É responsiva para celular?</summary>
+            <p>Sim. A estrutura foi desenhada mobile-first, ajustando-se a qualquer tela.</p>
+          </details>
+          <details>
+            <summary>Posso integrar com CRM ou planilha?</summary>
+            <p>Sim. Podemos enviar os dados para um endpoint (API), Google Sheets ou ferramenta de automação.</p>
+          </details>
+          <details>
+            <summary>Quanto tempo para publicar?</summary>
+            <p>Entre 10 e 30 minutos, dependendo de ajustes e imagens.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section id="contato" class="section section--highlight">
+      <div class="container form__wrap">
+        <div class="form__copy">
+          <h2>Pronto para começar?</h2>
+          <p>Preencha seus dados e enviaremos as próximas etapas.</p>
+          <ul class="list-check">
+            <li>Sem spam</li>
+            <li>Cancelamento a qualquer momento</li>
+            <li>Retorno em até 1 dia útil</li>
+          </ul>
+        </div>
+
+        <form id="leadForm" class="form" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+            <small class="error"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required />
+            <small class="error"></small>
+          </div>
+
+          <div class="field">
+            <label for="telefone">Telefone (opcional)</label>
+            <input id="telefone" name="telefone" type="tel" placeholder="(xx) xxxxx-xxxx" />
+            <small class="error"></small>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Quero falar com você</button>
+          <p class="form__privacy">Ao enviar, você concorda com nossa <a href="#" target="_blank" rel="noopener">Política de Privacidade</a>.</p>
+
+          <div id="formStatus" class="form__status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="./assets/logo.svg" alt="Logo" class="logo" />
+        <span>SeuProduto</span>
+      </div>
+      <div class="footer__links">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer__legal">
+        <small>© <span id="year"></span> SeuProduto. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
